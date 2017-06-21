@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e40-AE-3N2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="WWN-Qd-bmO">
+            <objects>
+                <viewController id="ASx-cU-UzQ" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NAq-xq-YsK"/>
+                        <viewControllerLayoutGuide type="bottom" id="W3q-1L-RUh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EEX-bf-gkd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9p7-Qn-qWf">
+                                <rect key="frame" x="111" y="272" width="152" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.13717072150000001" blue="0.12840838039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="购物车"/>
+                                <connections>
+                                    <action selector="button:" destination="ASx-cU-UzQ" eventType="touchUpInside" id="xi0-WB-mVe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kek-uP-D5k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dGk-5s-9ze" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5698.3999999999996" y="-11.244377811094454"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xi6-cR-rQy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xno-cp-8E2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" badgeValue="2" systemItem="favorites" id="P8u-Pe-bAD"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uqN-zo-Veb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ASx-cU-UzQ" kind="relationship" relationship="rootViewController" id="NJr-fH-rc4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwb-jh-DZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4759.1999999999998" y="-11.244377811094454"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="a4q-HG-0Yj">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="e40-AE-3N2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="dgm-rC-oUb">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xno-cp-8E2" kind="relationship" relationship="viewControllers" id="arn-Bf-ydY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GuF-SD-kgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3820" y="-11.244377811094454"/>
+        </scene>
+    </scenes>
+</document>
